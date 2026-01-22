@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #edece5; 
+}
+
+.CONTAINER{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-board{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    padding: 10px;
+    background-color: #9b8d81;
+    border-radius: 10px;
+}
+.title{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: #d7e1c1;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    color: #776e55;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-2{
+    background-color: #EEEFDA;
+}
+.title-4{
+    background-color: #f5713d;
+}
+.title-8{
+    background-color: #d69617;
+    color: white;
+}
+.title-16{
+    background-color: #b9e230;
+    color: whitesmoke;
+}
+.title-32{
+    background-color: #0fdd13;
+    color: black;
+}
+.title-64{
+    background-color: #65e1bc;
+}
+.title-128{
+    background-color: #11b6e3;
+    color: rgb(0, 0, 0);
+}
+.title-256{
+    background-color: #0a2be6;
+    color: whitesmoke;
+}
+.title-512{
+    background-color: #801fe1;
+    color: rgb(90, 65, 4);
+}
+.title-1024{
+    background-color: #c693ef;
+    color: rgb(0, 0, 0);
+}
+.title-2048{
+    background-color: #e60ae2;
+    color: whitesmoke;
+}
+.game_info{
+   margin-top: 20px;
+   text-align: center;
+}
+.score_container{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #8f7a66;
+    font-size: 16px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #060607;
+    color: rgb(212, 255, 0);
+}
+
+
